@@ -89,8 +89,6 @@ accident_severity_modeling/
 │   ├── 02_comportement_vs_gravite.R                # Analyse descriptive et bivariée
 │   ├── 03_modelisation_ordinale.R                  # Ajustement du modèle ordinale
 ├── outputs/
-│   ├── figures/                                    # Graphiques (histos, barplots...)
-├── README.md                                       # Présentation du projet
-└── .Rproj                          
+│   ├── figures/                                    # Graphiques (histos, barplots...)                         
 
 
