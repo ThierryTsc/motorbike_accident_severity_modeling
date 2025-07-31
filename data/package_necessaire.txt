@@ -1,0 +1,18 @@
+tidyverse      # Manipulation, visualisation, modèles de base
+janitor        # Nettoyage rapide des noms de colonnes
+skimr          # Statistiques descriptives complètes
+ggplot2        # Graphiques avancés
+readr          # Lecture efficace des fichiers csv
+dplyr          # Manipulation de données (filtres, regroupements, etc.)
+forcats        # Gestion des facteurs
+stringr        # Manipulation de chaînes
+lubridate      # Pour les dates (si besoin)
+broom          # Nettoyage de résultats de modèles (glm, etc.)
+car            # VIF et autres diagnostics
+pROC           # ROC/AUC pour modèles logistiques
+ROCR           # Alternative pour courbes ROC
+ResourceSelection # Test de Hosmer-Lemeshow pour logistique
+
+Pour régression logistique : 
+gtsummary      # Pour des tableaux de modèles propres et interprétables
+finalfit       # Présentation médicale type OR, IC95%, p
