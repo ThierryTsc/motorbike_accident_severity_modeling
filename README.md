@@ -42,7 +42,9 @@ Le dataset comprend **15 100 observations** avec les variables suivantes :
 ---
 
 ## 📌 Résultats principaux
-
+On se base ici sur les coefficients de ton modèle polr() + leurs signes, tailles, et significativité (via les p-values).
+Les coefficients positifs → augmentation de la probabilité d’un accident plus grave.
+Les négatifs → réduction du risque.
 Voici les **coefficients estimés** par le modèle ordinale, accompagnés de leur **interprétation**, **intervalle de confiance à 95%**, et **valeur p** (approximative) :
 
 | Variable                           | Niveau            | Coefficient | IC95% (Low - High)  | p-value   | Interprétation                                                                 |
@@ -57,6 +59,7 @@ Voici les **coefficients estimés** par le modèle ordinale, accompagnés de leu
 | `bike_speed`                      | Numérique (km/h)  | +0.0262     | [0.025 ; 0.028]     | < 2e-16   | La vitesse augmente le risque de gravité                                       |
 
 > ⚠️ Certains effets extrêmes (comme `smoke_while_riding = regularly`) sont probablement dus à un déséquilibre dans les données.
+> Le casque semble ne pas avoir un effet protecteur significatif ici, ce qui est probablement dû à un biais dans les données ou une confusion (ex : peut-être que ceux qui portent le casque roulent aussi plus vite ?)
 
 ---
 
@@ -77,4 +80,17 @@ Voici les **coefficients estimés** par le modèle ordinale, accompagnés de leu
 ---
 
 ## 🗂️ Organisation du dépôt
+accident_severity_modeling/
+├── data/
+│   └── motorbike_accidents_severity_analysis.csv   # Fichier de base
+|   └── package_necessaire.txt                      # Listings des packages utilisés durant le projet
+├── scripts/
+│   ├── 01_analyse_descriptive.R                    # Nettoyage, transformation
+│   ├── 02_comportement_vs_gravite.R                # Analyse descriptive et bivariée
+│   ├── 03_modelisation_ordinale.R                  # Ajustement du modèle ordinale
+├── outputs/
+│   ├── figures/                                    # Graphiques (histos, barplots...)
+├── README.md                                       # Présentation du projet
+└── .Rproj                          
+
 
